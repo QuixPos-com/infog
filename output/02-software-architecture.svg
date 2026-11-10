@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 622" width="100%" height="100%" style="font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; background: #F8FAFC;">
+  
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&amp;display=swap');
+    </style>
+    <!-- Subtle Dot Grid Pattern -->
+    <pattern id="bg-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#CBD5E1" opacity="0.55" />
+    </pattern>
+
+    <!-- Card Drop Shadows -->
+    <filter id="shadow-sm" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+    <filter id="shadow-md" x="-12%" y="-10%" width="124%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04" />
+    </filter>
+    <filter id="shadow-lg" x="-15%" y="-12%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.12" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+    <filter id="glow-amber" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#D97706" flood-opacity="0.28" />
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="grad-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="55%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+
+    <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="grad-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="grad-screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+
+    <linearGradient id="grad-dark-metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="grad-printer-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="grad-laser" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Arrow Markers for Connection Lines -->
+    <marker id="arrow-primary" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563EB" />
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0D9488" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#7C3AED" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#D97706" />
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#64748B" />
+    </marker>
+  </defs>
+
+  <!-- Background Base & Subtle Grid -->
+  <rect x="0" y="0" width="1400" height="622" fill="#F8FAFC" />
+  <rect x="0" y="0" width="1400" height="622" fill="url(#bg-grid)" />
+
+  
+
+  <!-- Main Infographic Content -->
+  
+    <!-- 1. TOP CENTER BOX: QuixPOS Dashboard -->
+    
+  <g transform="translate(450, 36)">
+    <!-- Card Body Base & Subtle Color Tone -->
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#FFFFFF" filter="url(#shadow-lg)" />
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#7C3AED" fill-opacity="0.045" stroke="#E2E8F0" stroke-width="1.5"  />
+
+    
+    <!-- Card Header Text -->
+    <text x="22" y="32" fill="#0F172A" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="16.5" font-weight="500">QuixPOS Dashboard</text>
+    
+    <line x1="18" y1="46" x2="482" y2="46" stroke="#E2E8F0" stroke-width="1" />
+    
+
+    
+
+    <!-- Inner Card Content -->
+    
+        
+  <g transform="translate(32, 105)">
+    
+  <g transform="translate(0, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-purple)" />
+    <g transform="translate(18, 18) scale(1)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4.5 13H12C13.9 13 15 11.6 15 10C15 8.5 13.9 7.2 12.3 7.1C11.9 4.5 9.7 3 7.3 3C4.7 3 2.7 4.9 2.6 7.5C1.5 7.9 1 9 1 10.2C1 11.8 2.4 13 4.5 13Z" />
+      </g>
+  </g>
+    <text x="64" y="34" text-anchor="middle" fill="#64748B" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="24" font-weight="500">/</text>
+    
+  <g transform="translate(76, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-primary)" />
+    <g transform="translate(18, 18) scale(1)" fill="#FFFFFF">
+        <rect x="1.5" y="2" width="5.8" height="5.4" rx="0.6" />
+        <rect x="8.5" y="2" width="6" height="5.4" rx="0.6" />
+        <rect x="1.5" y="8.6" width="5.8" height="5.4" rx="0.6" />
+        <rect x="8.5" y="8.6" width="6" height="5.4" rx="0.6" />
+      </g>
+  </g>
+  </g>
+        
+  <g transform="translate(212, 62) scale(1.08)">
+    <rect x="0" y="0" width="210" height="134" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1.8" filter="url(#shadow-md)" />
+    <rect x="0" y="0" width="210" height="22" rx="8" fill="#1E293B" />
+    <circle cx="13" cy="11" r="4" fill="#2563EB" />
+    <rect x="23" y="8" width="58" height="6" rx="3" fill="#475569" />
+    <rect x="154" y="6" width="46" height="10" rx="5" fill="#334155" />
+    <circle cx="161" cy="11" r="2.2" fill="#60A5FA" />
+
+    <!-- KPI Cards -->
+    <rect x="10" y="30" width="58" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="0.8" />
+    <rect x="16" y="36" width="32" height="4" rx="2" fill="#64748B" />
+    <rect x="16" y="45" width="40" height="8" rx="2" fill="#60A5FA" />
+
+    <rect x="76" y="30" width="58" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="0.8" />
+    <rect x="82" y="36" width="32" height="4" rx="2" fill="#64748B" />
+    <rect x="82" y="45" width="38" height="8" rx="2" fill="#60A5FA" />
+
+    <rect x="142" y="30" width="58" height="30" rx="4" fill="#1E293B" stroke="#475569" stroke-width="0.8" />
+    <rect x="148" y="36" width="32" height="4" rx="2" fill="#64748B" />
+    <rect x="148" y="45" width="42" height="8" rx="2" fill="#94A3B8" />
+
+    <!-- Chart Area -->
+    <rect x="10" y="68" width="190" height="56" rx="5" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+    <rect x="22" y="102" width="14" height="14" rx="1.5" fill="#3B82F6" />
+    <rect x="42" y="94" width="14" height="22" rx="1.5" fill="#3B82F6" />
+    <rect x="62" y="86" width="14" height="30" rx="1.5" fill="#60A5FA" />
+    <rect x="82" y="91" width="14" height="25" rx="1.5" fill="#3B82F6" />
+    <rect x="102" y="80" width="14" height="36" rx="1.5" fill="#2563EB" />
+    <rect x="128" y="82" width="62" height="34" rx="4" fill="#0F172A" stroke="#475569" stroke-width="0.8" />
+  </g>
+      
+
+    <text x="250" y="236" text-anchor="middle" fill="#64748B" font-family="'Outfit', sans-serif" font-size="11.5" font-weight="400">Cloud oder Windows Service</text>
+  </g>
+
+    <!-- 2. BOTTOM LEFT BOX: QuixPOS -->
+    
+  <g transform="translate(110, 336)">
+    <!-- Card Body Base & Subtle Color Tone -->
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#FFFFFF" filter="url(#shadow-md)" />
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#2563EB" fill-opacity="0.045" stroke="#E2E8F0" stroke-width="1.5"  />
+
+    
+    <!-- Card Header Text -->
+    <text x="22" y="32" fill="#0F172A" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="16.5" font-weight="500">QuixPOS</text>
+    
+    <line x1="18" y1="46" x2="482" y2="46" stroke="#E2E8F0" stroke-width="1" />
+    
+
+    
+
+    <!-- Inner Card Content -->
+    
+        
+  <g transform="translate(32, 105)">
+    
+  <g transform="translate(0, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-emerald)" />
+    <g transform="translate(18, 18) scale(1)" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round">
+        <path d="M3.5 9.5C3.5 6.8 5.5 4.8 8 4.8C10.5 4.8 12.5 6.8 12.5 9.5V12.5C12.5 13.3 11.8 14 11 14H5C4.2 14 3.5 13.3 3.5 12.5V9.5Z" fill="#FFFFFF" fill-opacity="0.15" />
+        <line x1="5.2" y1="2.2" x2="6.3" y2="4.8" />
+        <line x1="10.8" y1="2.2" x2="9.7" y2="4.8" />
+        <circle cx="6.2" cy="7.8" r="0.8" fill="#FFFFFF" stroke="none" />
+        <circle cx="9.8" cy="7.8" r="0.8" fill="#FFFFFF" stroke="none" />
+      </g>
+  </g>
+    <text x="64" y="34" text-anchor="middle" fill="#64748B" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="24" font-weight="500">/</text>
+    
+  <g transform="translate(76, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-teal)" />
+    <g transform="translate(18, 18) scale(1)" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="8" r="6.5" />
+        <circle cx="8" cy="8" r="2.6" fill="#FFFFFF" fill-opacity="0.2" />
+        <line x1="8" y1="5.4" x2="13.95" y2="5.4" />
+        <line x1="10.25" y1="9.3" x2="7.59" y2="14.48" />
+        <line x1="5.75" y1="9.3" x2="2.46" y2="4.52" />
+      </g>
+  </g>
+  </g>
+        
+  <g transform="translate(196, 50) scale(0.94)">
+    
+
+    <!-- Tablet Outer Chassis (12" Landscape 16:10 ratio) -->
+    <rect x="10" y="6" width="280" height="174" rx="14" fill="#0F172A" stroke="#334155" stroke-width="2" filter="url(#shadow-md)" />
+    <!-- Inner Bezel Highlight -->
+    <rect x="13" y="9" width="274" height="168" rx="11" fill="none" stroke="#475569" stroke-width="0.8" opacity="0.6" />
+    <!-- Front Camera Dot (Top Center) -->
+    <circle cx="150" cy="14" r="2" fill="#334155" />
+
+    <!-- Screen Viewport -->
+    <rect x="20" y="19" width="260" height="150" rx="6" fill="#F1F5F9" />
+
+    <!-- Top Navigation Bar Wireframe -->
+    <rect x="20" y="19" width="260" height="22" rx="4" fill="#1E293B" />
+    <circle cx="31" cy="30" r="5" fill="#2563EB" />
+    <rect x="42" y="27" width="64" height="6" rx="3" fill="#475569" />
+    <rect x="192" y="24" width="36" height="12" rx="6" fill="#334155" />
+    <circle cx="199" cy="30" r="2.2" fill="#60A5FA" />
+    <rect x="232" y="24" width="42" height="12" rx="6" fill="#334155" />
+    <circle cx="239" cy="30" r="2.2" fill="#60A5FA" />
+
+    <!-- Category Pills Row Wireframe -->
+    <g transform="translate(26, 46)">
+      <rect x="0" y="0" width="38" height="13" rx="4" fill="#2563EB" />
+      <rect x="42" y="0" width="36" height="13" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+      <rect x="82" y="0" width="34" height="13" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+      <rect x="120" y="0" width="34" height="13" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+    </g>
+
+    <!-- Product Grid (3x3 Tiles on Left Side - Unified Palette) -->
+    <g transform="translate(26, 64)">
+      <rect x="0" y="0" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="0" y="0" width="48" height="4" rx="2" fill="#3B82F6" />
+      <rect x="6" y="10" width="32" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="6" y="19" width="20" height="5" rx="2" fill="#93C5FD" />
+
+      <rect x="53" y="0" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="53" y="0" width="48" height="4" rx="2" fill="#3B82F6" />
+      <rect x="59" y="10" width="28" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="59" y="19" width="20" height="5" rx="2" fill="#93C5FD" />
+
+      <rect x="106" y="0" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="106" y="0" width="48" height="4" rx="2" fill="#3B82F6" />
+      <rect x="112" y="10" width="34" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="112" y="19" width="20" height="5" rx="2" fill="#93C5FD" />
+
+      <rect x="0" y="35" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="0" y="35" width="48" height="4" rx="2" fill="#64748B" />
+      <rect x="6" y="45" width="30" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="6" y="54" width="20" height="5" rx="2" fill="#94A3B8" />
+
+      <rect x="53" y="35" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="53" y="35" width="48" height="4" rx="2" fill="#64748B" />
+      <rect x="59" y="45" width="28" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="59" y="54" width="22" height="5" rx="2" fill="#94A3B8" />
+
+      <rect x="106" y="35" width="48" height="30" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="106" y="35" width="48" height="4" rx="2" fill="#64748B" />
+      <rect x="112" y="45" width="32" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="112" y="54" width="20" height="5" rx="2" fill="#94A3B8" />
+
+      <rect x="0" y="70" width="48" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <rect x="6" y="78" width="28" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="6" y="87" width="18" height="5" rx="2" fill="#E2E8F0" />
+
+      <rect x="53" y="70" width="48" height="28" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <rect x="59" y="78" width="28" height="5" rx="2" fill="#CBD5E1" />
+      <rect x="59" y="87" width="18" height="5" rx="2" fill="#E2E8F0" />
+
+      <rect x="106" y="70" width="48" height="28" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" />
+      <rect x="118" y="81" width="24" height="6" rx="3" fill="#93C5FD" />
+    </g>
+
+    <!-- Right Cart / Receipt Panel Wireframe -->
+    <g transform="translate(186, 46)">
+      <rect x="0" y="0" width="88" height="117" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="8" y="8" width="52" height="5" rx="2.5" fill="#94A3B8" />
+      <line x1="6" y1="18" x2="82" y2="18" stroke="#E2E8F0" stroke-width="1" />
+
+      <rect x="8" y="24" width="44" height="4.5" rx="2" fill="#CBD5E1" />
+      <rect x="64" y="24" width="16" height="4.5" rx="2" fill="#94A3B8" />
+
+      <rect x="8" y="36" width="40" height="4.5" rx="2" fill="#CBD5E1" />
+      <rect x="64" y="36" width="16" height="4.5" rx="2" fill="#94A3B8" />
+
+      <rect x="8" y="48" width="46" height="4.5" rx="2" fill="#CBD5E1" />
+      <rect x="64" y="48" width="16" height="4.5" rx="2" fill="#94A3B8" />
+
+      <line x1="6" y1="64" x2="82" y2="64" stroke="#CBD5E1" stroke-dasharray="2 2" />
+      <rect x="8" y="71" width="32" height="4" rx="2" fill="#E2E8F0" />
+      <rect x="64" y="71" width="16" height="4" rx="2" fill="#E2E8F0" />
+
+      <rect x="8" y="82" width="28" height="6" rx="2" fill="#64748B" />
+      <rect x="56" y="82" width="24" height="6" rx="2" fill="#2563EB" />
+
+      <!-- Pay CTA Button -->
+      <rect x="6" y="95" width="76" height="17" rx="4" fill="url(#grad-primary)" />
+    </g>
+  </g>
+      
+
+    <text x="250" y="236" text-anchor="middle" fill="#64748B" font-family="'Outfit', sans-serif" font-size="11.5" font-weight="400">Android-App oder Webseite</text>
+  </g>
+
+    <!-- 3. BOTTOM RIGHT BOX: Printer Agent -->
+    
+  <g transform="translate(790, 336)">
+    <!-- Card Body Base & Subtle Color Tone -->
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#FFFFFF" filter="url(#shadow-md)" />
+    <rect x="0" y="0" width="500" height="250" rx="16" fill="#059669" fill-opacity="0.045" stroke="#E2E8F0" stroke-width="1.5"  />
+
+    
+    <!-- Card Header Text -->
+    <text x="22" y="32" fill="#0F172A" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="16.5" font-weight="500">Printer Agent</text>
+    
+    <line x1="18" y1="46" x2="482" y2="46" stroke="#E2E8F0" stroke-width="1" />
+    
+
+    
+
+    <!-- Inner Card Content -->
+    
+        
+  <g transform="translate(32, 105)">
+    
+  <g transform="translate(0, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-emerald)" />
+    <g transform="translate(18, 18) scale(1)" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round">
+        <path d="M3.5 9.5C3.5 6.8 5.5 4.8 8 4.8C10.5 4.8 12.5 6.8 12.5 9.5V12.5C12.5 13.3 11.8 14 11 14H5C4.2 14 3.5 13.3 3.5 12.5V9.5Z" fill="#FFFFFF" fill-opacity="0.15" />
+        <line x1="5.2" y1="2.2" x2="6.3" y2="4.8" />
+        <line x1="10.8" y1="2.2" x2="9.7" y2="4.8" />
+        <circle cx="6.2" cy="7.8" r="0.8" fill="#FFFFFF" stroke="none" />
+        <circle cx="9.8" cy="7.8" r="0.8" fill="#FFFFFF" stroke="none" />
+      </g>
+  </g>
+    <text x="64" y="34" text-anchor="middle" fill="#64748B" font-family="'Outfit Medium', 'Outfit', sans-serif" font-size="24" font-weight="500">/</text>
+    
+  <g transform="translate(76, 0)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="52" height="52" rx="12" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5" />
+    <rect x="10" y="10" width="32" height="32" rx="8" fill="url(#grad-primary)" />
+    <g transform="translate(18, 18) scale(1)" fill="#FFFFFF">
+        <rect x="1.5" y="2" width="5.8" height="5.4" rx="0.6" />
+        <rect x="8.5" y="2" width="6" height="5.4" rx="0.6" />
+        <rect x="1.5" y="8.6" width="5.8" height="5.4" rx="0.6" />
+        <rect x="8.5" y="8.6" width="6" height="5.4" rx="0.6" />
+      </g>
+  </g>
+  </g>
+        <path d="M 180 131 L 236 131" stroke="#059669" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-emerald)" />
+        
+  <g transform="translate(254, 50) scale(1)">
+    <!-- Isometric Epson TM-m30III Cube -->
+    <g filter="url(#shadow-md)">
+      <!-- Drop Shadow Base Polygon -->
+      <polygon points="16,124 76,164 136,124 76,88" fill="#0F172A" opacity="0.22" />
+
+      <!-- LEFT VERTICAL FACE (Darker Matte Black) -->
+      <polygon points="14,46 76,84 76,162 14,122" fill="#1F2227" stroke="#111317" stroke-width="1" stroke-linejoin="round" />
+
+      <!-- Bottom-Left Cable Cover Notch on Left Face -->
+      <polygon points="18,108 25,113 25,127 18,122" fill="#181A1F" stroke="#0F1115" stroke-width="0.8" />
+
+      <!-- Top-Left Hinge Curve Detail on Left Face -->
+      <path d="M 14 54 C 20 58 23 55 23 49 L 18 46" fill="none" stroke="#0F1115" stroke-width="1.2" />
+
+      <!-- FRONT-RIGHT VERTICAL FACE (Charcoal Matte Black) -->
+      <polygon points="76,84 138,46 135,122 76,162" fill="#2B2E34" stroke="#181A1F" stroke-width="1" stroke-linejoin="round" />
+
+      <!-- NFC Mark in Upper-Right Corner of Front-Right Face -->
+      <g transform="translate(128, 72) skewY(-31.5)">
+        <rect x="-3.5" y="-4" width="7" height="7" rx="1" fill="none" stroke="#9CA3AF" stroke-width="0.9" />
+        <path d="M -1.8 1.5 L -1.8 -2 L 1.8 1.5 L 1.8 -2" fill="none" stroke="#9CA3AF" stroke-width="0.85" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+
+      <!-- TOP DIAMOND FACE BASE -->
+      <polygon points="76,8 138,46 76,84 14,46" fill="#26292E" stroke="#14161A" stroke-width="1" stroke-linejoin="round" />
+
+      <!-- Back-Left Narrow Rim Strip -->
+      <polygon points="76,8 80,10.5 18,48.5 14,46" fill="#2D3138" stroke="#111317" stroke-width="0.9" />
+
+      <!-- Main Top Paper Cover Lid -->
+      <polygon points="80,10.5 127,39.2 65,77.2 18,48.5" fill="#282B30" stroke="#14161A" stroke-width="1" />
+
+      <!-- Subtle Touch Controls on Top-Back Corner (Power & Feed) -->
+      <g transform="translate(80, 19) rotate(31) skewX(-30)" opacity="0.55">
+        <circle cx="0" cy="0" r="2.2" fill="none" stroke="#9CA3AF" stroke-width="0.8" />
+        <line x1="0" y1="-2.6" x2="0" y2="-0.5" stroke="#9CA3AF" stroke-width="0.8" />
+        <rect x="6" y="-2" width="4" height="4" rx="0.6" fill="none" stroke="#9CA3AF" stroke-width="0.7" />
+      </g>
+
+      <!-- Paper Exit Slot Seam (Between Main Lid and Front-Right Status Bar) -->
+      <line x1="65" y1="77.2" x2="127" y2="39.2" stroke="#090A0C" stroke-width="2.6" />
+      <line x1="72" y1="72.9" x2="73.5" y2="72" stroke="#9CA3AF" stroke-width="1.3" />
+      <line x1="115" y1="46.5" x2="116.5" y2="45.6" stroke="#9CA3AF" stroke-width="1.3" />
+
+      <!-- Front-Right Status Strip (Between Paper Slot and Front-Right Edge) -->
+      <polygon points="65,77.2 117,45.3 128,52 76,84" fill="#31353C" stroke="#181A1F" stroke-width="0.9" />
+
+      <!-- Top-Right Cover Open Lever Button -->
+      <polygon points="117,45.3 127,39.2 138,46 128,52" fill="#2D3138" stroke="#111317" stroke-width="1" />
+      <polyline points="128,52 128,55 138,48.8" fill="none" stroke="#111317" stroke-width="1" />
+
+      <!-- Status Icons & LED Indicator Bars Along Front-Right Bevel -->
+      <circle cx="82.5" cy="75.2" r="1.6" fill="none" stroke="#CBD5E1" stroke-width="0.7" />
+      <line x1="82.5" y1="78.2" x2="86.2" y2="75.9" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+      <circle cx="84.3" cy="77" r="2.2" fill="#38BDF8" opacity="0.45" />
+
+      <line x1="88" y1="71.2" x2="89.2" y2="72.5" stroke="#9CA3AF" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="89.5" y1="73.9" x2="93.2" y2="71.6" stroke="#64748B" stroke-width="1.3" stroke-linecap="round" />
+
+      <rect x="94.5" y="66.8" width="2.6" height="2" rx="0.4" transform="rotate(-31, 95.8, 67.8)" fill="none" stroke="#9CA3AF" stroke-width="0.7" />
+      <line x1="96.5" y1="69.6" x2="100.2" y2="67.3" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" />
+
+      <circle cx="103" cy="62.8" r="1.1" fill="none" stroke="#9CA3AF" stroke-width="0.7" />
+      <line x1="103.5" y1="65.3" x2="107.2" y2="63" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" />
+
+      <path d="M 108.5 58.8 Q 110 57.2 111.5 58.5" fill="none" stroke="#9CA3AF" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="110.5" y1="61" x2="114.2" y2="58.7" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" />
+
+      <path d="M 116.5 53.5 L 117.8 55.2" stroke="#9CA3AF" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="117.5" y1="56.7" x2="121.2" y2="54.4" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" />
+
+      <line x1="76" y1="84" x2="76" y2="161" stroke="#3F444E" stroke-width="1" />
+    </g>
+
+    
+  </g>
+      
+
+    <text x="250" y="236" text-anchor="middle" fill="#64748B" font-family="'Outfit', sans-serif" font-size="11.5" font-weight="400">Standalone oder App-integriert</text>
+  </g>
+
+    <!-- CONNECTIONS BETWEEN THE 3 BOXES -->
+    
+  <g>
+    <!-- Connection Path Glow / Backing -->
+    <path d="M 360 336 L 360 161 L 450 161" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+    <!-- Connection Path -->
+    <path d="M 360 336 L 360 161 L 450 161" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-start="url(#arrow-primary)" marker-end="url(#arrow-primary)" />
+
+    
+  </g>
+
+    
+  <g>
+    <!-- Connection Path Glow / Backing -->
+    <path d="M 1040 336 L 1040 161 L 950 161" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+    <!-- Connection Path -->
+    <path d="M 1040 336 L 1040 161 L 950 161" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-start="url(#arrow-emerald)" marker-end="url(#arrow-emerald)" />
+
+    
+  </g>
+
+    
+  <g>
+    <!-- Connection Path Glow / Backing -->
+    <path d="M 610 461 L 790 461" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+    <!-- Connection Path -->
+    <path d="M 610 461 L 790 461" fill="none" stroke="#0D9488" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"  marker-start="url(#arrow-teal)" marker-end="url(#arrow-teal)" />
+
+    
+  </g>
+  
+
+  
+</svg>

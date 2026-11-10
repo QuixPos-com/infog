@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuixPOS Infografiken – Übersicht</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 32px 24px 64px;
+      font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0F172A;
+      color: #F8FAFC;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #334155;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    header p {
+      margin: 4px 0 0;
+      color: #94A3B8;
+      font-size: 14px;
+    }
+    .card {
+      background: #1E293B;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 36px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.35);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .card-header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #E2E8F0;
+    }
+    .actions a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #2563EB;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    .actions a:hover {
+      background: #1D4ED8;
+    }
+    .svg-frame {
+      background: #F8FAFC;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #475569;
+    }
+    .svg-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>QuixPOS Infografiken</h1>
+        <p>Generierte Vektor-Infografiken (Standalone SVG) aus gemeinsamen Komponenten</p>
+      </div>
+    </header>
+
+    
+    <section class="card">
+      <div class="card-header">
+        <h2>Infografik #1: Physischer Kassenaufbau (POS Hardware-Setup)</h2>
+        <div class="actions">
+          <a href="./01-pos-physical-setup.svg" target="_blank">SVG im neuen Tab öffnen</a>
+          <a href="./01-pos-physical-setup.svg" download="01-pos-physical-setup.svg">SVG herunterladen</a>
+        </div>
+      </div>
+      <div class="svg-frame">
+        <img src="./01-pos-physical-setup.svg" alt="Infografik #1: Physischer Kassenaufbau (POS Hardware-Setup)" />
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Infografik #2: QuixPOS Software-Architektur</h2>
+        <div class="actions">
+          <a href="./02-software-architecture.svg" target="_blank">SVG im neuen Tab öffnen</a>
+          <a href="./02-software-architecture.svg" download="02-software-architecture.svg">SVG herunterladen</a>
+        </div>
+      </div>
+      <div class="svg-frame">
+        <img src="./02-software-architecture.svg" alt="Infografik #2: QuixPOS Software-Architektur" />
+      </div>
+    </section>
+  </div>
+</body>
+</html>

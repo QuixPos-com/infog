@@ -1,0 +1,10 @@
+{
+  "name": "quixpos-infographics",
+  "version": "1.0.0",
+  "description": "SVG Infographic Generator for QuixPOS Hardware Setup and Software Architecture",
+  "type": "module",
+  "scripts": {
+    "build": "node generate.js"
+  }
+}
+

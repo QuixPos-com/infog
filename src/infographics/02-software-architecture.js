@@ -12,7 +12,11 @@ import {
   renderConnection,
   renderIcon,
 } from "../shared/primitives.js";
-import { renderPosTablet12, renderEpsonTmM30III } from "../shared/devices.js";
+import {
+  renderPosTablet12,
+  renderEpsonTmM30III,
+  renderLabelPrinter,
+} from "../shared/devices.js";
 
 /**
  * Uniform platform icon badge — each platform always uses its own fixed color
@@ -128,9 +132,10 @@ export function generateSoftwareArchitectureSvg() {
       accentColor: colors.emerald,
       shadow: "shadow-md",
       children: `
-        ${renderPlatformPair("android", "windows", 32, 105)}
-        <path d="M 180 131 L 236 131" stroke="${colors.emerald}" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-emerald)" />
-        ${renderEpsonTmM30III({ x: 254, y: 50, scale: 1.0, showTseCallout: false })}
+        ${renderPlatformPair("android", "windows", 22, 105)}
+        <path d="M 162 131 L 198 131" stroke="${colors.emerald}" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-emerald)" />
+        ${renderEpsonTmM30III({ x: 202, y: 58, scale: 0.85, showTseCallout: false })}
+        ${renderLabelPrinter({ x: 326, y: 58, scale: 0.86 })}
       `,
     })}
 

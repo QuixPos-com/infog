@@ -36,7 +36,7 @@ export function generatePhysicalSetupSvg() {
       x: 48,
       y: 326,
       title: "SumUp oder O.P.I.",
-      fineprint: "Solo, Lite oder Lite+",
+      fineprint: "Solo, Solo Lite oder Air",
       illustration: renderSumUpSolo({ x: 74, y: 54, scale: 1.04 }),
       conn: {
         path: "M 368 456 L 429 456 L 429 356 L 490 356",

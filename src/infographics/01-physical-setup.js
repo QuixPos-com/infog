@@ -24,7 +24,7 @@ export function generatePhysicalSetupSvg() {
       x: 48,
       y: 36,
       title: "Kundendisplay (optional)",
-      fineprint: "z.b. Samsung A11",
+      fineprint: "z.b. Samsung Galaxy Tab A11",
       illustration: renderCustomerDisplay8({ x: 96, y: 50, scale: 0.9 }),
       conn: {
         path: "M 368 166 L 429 166 L 429 236 L 490 236",
@@ -48,7 +48,7 @@ export function generatePhysicalSetupSvg() {
       x: 1032,
       y: 36,
       title: "Bondrucker + TSE",
-      fineprint: "z.b. Epson tm-m30iii",
+      fineprint: "z.b. TM-m30iii + Epson USB TSE",
       illustration: renderEpsonTmM30III({ x: 26, y: 54, scale: 1.0, showTseCallout: true }),
       conn: {
         path: "M 910 236 L 971 236 L 971 166 L 1032 166",
@@ -59,7 +59,7 @@ export function generatePhysicalSetupSvg() {
     {
       x: 1032,
       y: 326,
-      fineprint: "z.b. Inatek BCST-60",
+      fineprint: "z.b. Inatek BCST-21 oder BCST-70",
       illustration: renderBarcodeScanner({ x: 46, y: 38, scale: 1.02 }),
       conn: {
         path: "M 1032 456 L 971 456 L 971 356 L 910 356",
@@ -73,32 +73,33 @@ export function generatePhysicalSetupSvg() {
   const content = `
     <!-- Center Hub: 12" Landscape POS Tablet -->
     ${renderCard({
-      x: 490,
-      y: 106,
-      w: 420,
-      h: 380,
-      fineprint: "z.b. Samsung A11+",
-      accentColor: colors.primary,
-      shadow: "shadow-lg",
-      children: `
+    x: 490,
+    y: 106,
+    w: 420,
+    h: 380,
+    title: "QuixPOS App",
+    fineprint: "z.b. Galaxy Tab A11+ oder Tab S9+",
+    accentColor: colors.primary,
+    shadow: "shadow-lg",
+    children: `
         ${renderPosTablet12({ x: 22, y: 52, scale: 1.25, showStand: true })}
       `,
-    })}
+  })}
 
     <!-- Peripheral Cards & Connections -->
     ${peripherals
       .map(
         (p) => `
       ${renderCard({
-        x: p.x,
-        y: p.y,
-        w: 320,
-        h: 260,
-        title: p.title || "",
-        fineprint: p.fineprint || "",
-        accentColor: colors.primary,
-        children: p.illustration,
-      })}
+          x: p.x,
+          y: p.y,
+          w: 320,
+          h: 260,
+          title: p.title || "",
+          fineprint: p.fineprint || "",
+          accentColor: colors.primary,
+          children: p.illustration,
+        })}
       ${renderConnection(p.conn)}
     `
       )
